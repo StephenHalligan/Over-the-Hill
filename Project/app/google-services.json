@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200765285577",
+    "project_id": "over-the-hill-ab36e",
+    "storage_bucket": "over-the-hill-ab36e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200765285577:android:10b014f1782672600b5918",
+        "android_client_info": {
+          "package_name": "com.example.overthehill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200765285577-sa0dn89pbgbi2qkm26aegvqanpvu8n4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgIR_UuHqceoedRCYjzj-2GPDb_ueUbt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200765285577-sa0dn89pbgbi2qkm26aegvqanpvu8n4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
