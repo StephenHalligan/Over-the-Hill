@@ -23,7 +23,7 @@ import java.util.Objects;
 public class RegisterActivity extends AppCompatActivity {
 
     private Button mRegister;
-    private EditText mName, mEmail, mPassword;
+    private EditText mName, mEmail, mPassword, mAge, mInterests;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener firebaseAuthStateListener;
@@ -52,6 +52,9 @@ public class RegisterActivity extends AppCompatActivity {
         mName = (EditText) findViewById(R.id.Name);
         mEmail = (EditText) findViewById(R.id.Email);
         mPassword = (EditText) findViewById(R.id.Password);
+        mAge = (EditText) findViewById(R.id.Age);
+        mInterests = (EditText) findViewById(R.id.Interests);
+
 
         //Register user
         mRegister.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +64,9 @@ public class RegisterActivity extends AppCompatActivity {
                 final String name = mName.getText().toString();
                 final String email = mEmail.getText().toString();
                 final String password = mPassword.getText().toString();
+                final String age = mAge.getText().toString();
+                final String interests = mInterests.getText().toString();
+
                 mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
