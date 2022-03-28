@@ -25,10 +25,22 @@
         android:hint="Password"
         android:id="@+id/Password"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:id="@+id/Age"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Interests"
+        android:id="@+id/Interests"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Sign up!"
         android:id="@+id/Register"/>
 
 </LinearLayout>
