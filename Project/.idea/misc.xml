@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/HP/AndroidStudioProjects/MobileDevelopmentProject/Project/app/src/main/res/drawable/textlines.xml" value="0.2828125" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/MobileDevelopmentProject/Project/app/src/main/res/layout/activity_profile.xml" value="0.2988679352838745" />
+        <entry key="..\:/Users/andym/AndroidStudioProjects/MobileDevelopmentProject/Project/app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
+        <entry key="..\:/Users/andym/AndroidStudioProjects/MobileDevelopmentProject/Project/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/andym/AndroidStudioProjects/MobileDevelopmentProject/Project/app/src/main/res/layout/activity_main.xml" value="0.14990942028985507" />
+        <entry key="..\:/Users/andym/AndroidStudioProjects/MobileDevelopmentProject/Project/app/src/main/res/layout/activity_register.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
       </map>
