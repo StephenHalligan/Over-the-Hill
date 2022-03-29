@@ -6,53 +6,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/textView8"
+    <EditText
+        android:id="@+id/Name"
         android:layout_width="173dp"
         android:layout_height="44dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/textlines"
-        android:text="Name: "
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        android:hint="Name"
+        app:layout_constraintEnd_toStartOf="@+id/Email"
+        app:layout_constraintStart_toStartOf="@+id/Location"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileImg" />
 
-    <TextView
-        android:id="@+id/textView9"
+    <EditText
+        android:id="@+id/Email"
         android:layout_width="168dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/textlines"
-        android:text="Email: "
-        app:layout_constraintEnd_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="@+id/Age"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileImg" />
 
-    <TextView
-        android:id="@+id/textView10"
+    <EditText
+        android:id="@+id/Age"
         android:layout_width="173dp"
         android:layout_height="44dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/textlines"
-        android:text="Age: "
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        android:hint="Age"
+        app:layout_constraintStart_toStartOf="@+id/ProfileImg"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
 
-    <TextView
-        android:id="@+id/textView11"
+    <EditText
+        android:id="@+id/Location"
         android:layout_width="173dp"
         android:layout_height="44dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/textlines"
-        android:text="Location: "
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        android:hint="Location"
+        app:layout_constraintEnd_toStartOf="@+id/Age"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ProfileImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -62,36 +62,36 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/textView12"
+    <EditText
+        android:id="@+id/Bio"
         android:layout_width="378dp"
         android:layout_height="126dp"
         android:layout_marginTop="172dp"
         android:background="@drawable/textlines"
-        android:text="Bio: "
-        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        android:hint="Bio"
+        app:layout_constraintEnd_toEndOf="@+id/Location"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="@+id/Location"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileImg" />
 
-    <TextView
-        android:id="@+id/textView13"
+    <EditText
+        android:id="@+id/Interests"
         android:layout_width="256dp"
         android:layout_height="131dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/textlines"
-        android:text="Interests: "
+        android:hint="Interests"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/Bio" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/SaveChanges"
         android:layout_width="107dp"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="56dp"
         android:text="Update Info"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintStart_toEndOf="@+id/Interests"
+        app:layout_constraintTop_toBottomOf="@+id/Bio" />
 </androidx.constraintlayout.widget.ConstraintLayout>
