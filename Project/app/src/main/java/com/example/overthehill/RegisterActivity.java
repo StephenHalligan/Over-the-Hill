@@ -79,6 +79,10 @@ public class RegisterActivity extends AppCompatActivity {
                             String userId = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
                             DatabaseReference currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Name");
                             currentUserDb.setValue(name);
+                            currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Age");
+                            currentUserDb.setValue(age);
+                            currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Interests");
+                            currentUserDb.setValue(interests);
                         }
 
                     }
