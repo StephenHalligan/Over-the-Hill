@@ -54,7 +54,6 @@ public class ProfileActivity extends AppCompatActivity {
         mInterests = (EditText) findViewById(R.id.Interests);
 
         mSaveChanges.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View view) {
 
