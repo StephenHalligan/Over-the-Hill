@@ -30,6 +30,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         mAuth = FirebaseAuth.getInstance();
@@ -47,6 +48,7 @@ public class ProfileActivity extends AppCompatActivity {
         mSaveChanges.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 final String name = mName.getText().toString();
                 final String email = mEmail.getText().toString();
                 final String location = mLocation.getText().toString();
@@ -69,7 +71,6 @@ public class ProfileActivity extends AppCompatActivity {
                 currentUserDb.setValue(interests);
 
                 Toast.makeText(ProfileActivity.this, "Saved user data!", Toast.LENGTH_SHORT).show();
-
 
             }
         });
