@@ -3,9 +3,6 @@ package com.example.overthehill;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,26 +30,21 @@ public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
         mAuth = FirebaseAuth.getInstance();
-        firebaseAuthStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-            }
-        };
 
-        mSaveChanges = (Button) findViewById(R.id.SaveChanges);
+        mSaveChanges = (Button) findViewById(R.id.saveChanges);
 
-        mName = (EditText) findViewById(R.id.Name);
-        mEmail = (EditText) findViewById(R.id.Email);
-        mLocation = (EditText) findViewById(R.id.Location);
-        mAge = (EditText) findViewById(R.id.Age);
-        mBio = (EditText) findViewById(R.id.Bio);
-        mInterests = (EditText) findViewById(R.id.Interests);
+        mName = (EditText) findViewById(R.id.editName);
+        mEmail = (EditText) findViewById(R.id.editEmail);
+        mLocation = (EditText) findViewById(R.id.editLocation);
+        mAge = (EditText) findViewById(R.id.editAge);
+        mBio = (EditText) findViewById(R.id.editBio);
+        mInterests = (EditText) findViewById(R.id.editInterests);
 
+        //Save changes
         mSaveChanges.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,8 +70,9 @@ public class ProfileActivity extends AppCompatActivity {
                 currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Interests");
                 currentUserDb.setValue(interests);
 
+                Toast.makeText(ProfileActivity.this, "Saved user data!", Toast.LENGTH_SHORT).show();
+
             }
         });
-
     }
 }

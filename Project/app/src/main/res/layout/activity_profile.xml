@@ -1,97 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/Name"
-        android:layout_width="173dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/textlines"
-        android:hint="Name"
-        app:layout_constraintEnd_toStartOf="@+id/Email"
-        app:layout_constraintStart_toStartOf="@+id/Location"
-        app:layout_constraintTop_toBottomOf="@+id/ProfileImg" />
-
-    <EditText
-        android:id="@+id/Email"
-        android:layout_width="168dp"
+        android:id="@+id/editName"
+        android:layout_width="170dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="172dp"
         android:background="@drawable/textlines"
-        android:hint="Email"
-        app:layout_constraintEnd_toEndOf="@+id/Age"
-        app:layout_constraintTop_toBottomOf="@+id/ProfileImg" />
+        android:hint="Name: "
+        app:layout_constraintTop_toTopOf="@+id/profilePhoto"
+        tools:layout_editor_absoluteX="10dp" />
 
     <EditText
-        android:id="@+id/Age"
-        android:layout_width="173dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/editEmail"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
         android:background="@drawable/textlines"
-        android:hint="Age"
-        app:layout_constraintStart_toStartOf="@+id/ProfileImg"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
+        android:hint="Email: "
+        app:layout_constraintStart_toEndOf="@+id/editName"
+        app:layout_constraintTop_toTopOf="@+id/editName" />
 
     <EditText
-        android:id="@+id/Location"
-        android:layout_width="173dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
+        android:id="@+id/editAge"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
         android:background="@drawable/textlines"
-        android:hint="Location"
-        app:layout_constraintEnd_toStartOf="@+id/Age"
-        app:layout_constraintTop_toBottomOf="@+id/Name" />
+        android:hint="Age: "
+        app:layout_constraintStart_toStartOf="@+id/editEmail"
+        app:layout_constraintTop_toTopOf="@+id/editLocation" />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="246dp"
+        android:background="@drawable/textlines"
+        android:hint="Location: "
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toTopOf="@+id/profilePhoto" />
 
     <ImageView
-        android:id="@+id/ProfileImg"
+        android:id="@+id/profilePhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <EditText
-        android:id="@+id/Bio"
-        android:layout_width="378dp"
-        android:layout_height="126dp"
-        android:layout_marginTop="172dp"
+        android:id="@+id/editBio"
+        android:layout_width="390dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="315dp"
         android:background="@drawable/textlines"
-        android:hint="Bio"
-        app:layout_constraintEnd_toEndOf="@+id/Location"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/Location"
-        app:layout_constraintTop_toBottomOf="@+id/ProfileImg" />
+        android:hint="Bio: "
+        app:layout_constraintStart_toStartOf="@+id/editLocation"
+        app:layout_constraintTop_toTopOf="@+id/profilePhoto" />
 
     <EditText
-        android:id="@+id/Interests"
-        android:layout_width="256dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="16dp"
+        android:id="@+id/editInterests"
+        android:layout_width="390dp"
+        android:layout_height="80dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/textlines"
-        android:hint="Interests"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Bio" />
+        android:hint="Interests: "
+        app:layout_constraintStart_toStartOf="@+id/editBio"
+        app:layout_constraintTop_toBottomOf="@+id/editBio" />
 
     <Button
-        android:id="@+id/SaveChanges"
-        android:layout_width="107dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
+        android:id="@+id/saveChanges"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
         android:text="Update Info"
-        app:layout_constraintStart_toEndOf="@+id/Interests"
-        app:layout_constraintTop_toBottomOf="@+id/Bio" />
+        app:layout_constraintTop_toTopOf="@+id/editInterests"
+        tools:layout_editor_absoluteX="155dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
