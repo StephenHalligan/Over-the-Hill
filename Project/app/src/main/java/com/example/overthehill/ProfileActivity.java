@@ -15,8 +15,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
 
@@ -58,17 +61,29 @@ public class ProfileActivity extends AppCompatActivity {
 
                 String userId = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
                 DatabaseReference currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Name");
-                currentUserDb.setValue(name);
+                if(!name.equals("")) {
+                    currentUserDb.setValue(name);
+                }
                 currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Email");
-                currentUserDb.setValue(email);
+                if(!email.equals("")) {
+                    currentUserDb.setValue(email);
+                }
                 currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Location");
-                currentUserDb.setValue(location);
+                if(!location.equals("")) {
+                    currentUserDb.setValue(location);
+                }
                 currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Age");
-                currentUserDb.setValue(age);
+                if(!age.equals("")) {
+                    currentUserDb.setValue(age);
+                }
                 currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Bio");
-                currentUserDb.setValue(bio);
+                if(!bio.equals("")) {
+                    currentUserDb.setValue(bio);
+                }
                 currentUserDb = FirebaseDatabase.getInstance().getReference().child("Users").child(userId).child("Interests");
-                currentUserDb.setValue(interests);
+                if(!interests.equals("")) {
+                    currentUserDb.setValue(interests);
+                }
 
                 Toast.makeText(ProfileActivity.this, "Saved user data!", Toast.LENGTH_SHORT).show();
 
