@@ -50,12 +50,22 @@ public class ProfileActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch(item.getItemId()) {
                     case R.id.home:
-                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        startActivity(new Intent(getApplicationContext(), SponsoredEventsActivity.class));
                         overridePendingTransition(0,0 );
                         return true;
+
                     case R.id.profile:
                         return true;
 
+                    case R.id.events:
+                        startActivity(new Intent(getApplicationContext(), EventsActivity.class));
+                        overridePendingTransition(0,0 );
+                        return true;
+
+                    case R.id.maker:
+                        startActivity(new Intent(getApplicationContext(), EventMakerActivity.class));
+                        overridePendingTransition(0,0 );
+                        return true;
                 }
 
                 return false;

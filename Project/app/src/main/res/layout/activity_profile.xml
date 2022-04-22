@@ -82,5 +82,17 @@
         android:layout_marginTop="96dp"
         android:text="Update Info"
         app:layout_constraintTop_toTopOf="@+id/editInterests"
-        tools:layout_editor_absoluteX="155dp" />
+        tools:layout_editor_absoluteX="155dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/black"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
