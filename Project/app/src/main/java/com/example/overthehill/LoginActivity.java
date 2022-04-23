@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 //Check if user is logged in
                 if (user != null) {
-                    Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, SponsoredEventsActivity.class);
                     startActivity(intent);
                     finish();
                     return;
