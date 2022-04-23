@@ -106,7 +106,7 @@ public class EventMakerActivity<calendarView> extends AppCompatActivity {
                 Map<String,Object> event = new HashMap<>();
                 event.put("Title",eventName.getText().toString());
                 event.put("Description",eventDescription.getText().toString());
-                event.put("Date",(int) calendarView.getDate());
+                event.put("date",(int) calendarView.getDate());
 
 
                 db.collection(eventType)

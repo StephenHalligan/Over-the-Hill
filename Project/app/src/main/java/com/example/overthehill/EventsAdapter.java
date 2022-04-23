@@ -79,8 +79,8 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.ViewHolder
         // contents of the view with that element
         Log.d(TAG,"boobies " + position + localDataSet.get(position).get("title"));
 
-        viewHolder.textView.setText((String) localDataSet.get(position).get("title"));
-        viewHolder.description.setText((String) localDataSet.get(position).get("description "));
+        viewHolder.textView.setText((String) localDataSet.get(position).get("Title"));
+        viewHolder.description.setText((String) localDataSet.get(position).get("Description"));
 
         Log.d(TAG,localDataSet.get(position) + "fat tits");
     }

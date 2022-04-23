@@ -33,6 +33,7 @@ public class EventsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_events);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setSelectedItemId(R.id.events);
@@ -45,7 +46,6 @@ public class EventsActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), SponsoredEventsActivity.class));
                         overridePendingTransition(0,0 );
                         return true;
-
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
                         overridePendingTransition(0,0 );
@@ -68,7 +68,7 @@ public class EventsActivity extends AppCompatActivity {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        db.collection("EventsActivity")
+        db.collection("events")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -98,7 +98,7 @@ public class EventsActivity extends AppCompatActivity {
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
-        db.collection("SponsoredEvents")
+        db.collection("events")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
