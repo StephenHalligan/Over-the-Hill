@@ -40,6 +40,20 @@
             android:exported="false">
         </activity>
 
+        <activity
+            android:name=".EventMakerActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".EventsActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name=".SponsoredEventsActivity"
+            android:exported="false">
+        </activity>
 
     </application>
 

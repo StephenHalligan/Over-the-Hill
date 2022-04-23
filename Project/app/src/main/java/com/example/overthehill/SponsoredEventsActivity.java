@@ -32,7 +32,7 @@ public class SponsoredEventsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_events);
+        setContentView(R.layout.activity_sponsoredevents);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
@@ -116,12 +116,12 @@ public class SponsoredEventsActivity extends AppCompatActivity {
                             }
 
                         } else {
-                            Log.w(TAG, "boobies Error getting documents.", task.getException());
+                            Log.w(TAG, "Error getting documents.", task.getException());
                         }
                     }
                 });
 
-        Log.d(TAG,data + "boobies");
+        Log.d(TAG,data + "");
 
         return data;
     }
