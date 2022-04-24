@@ -40,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
                 final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 //Check if user is logged in
                 if (user != null) {
-                    Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
+                    Intent intent = new Intent(RegisterActivity.this, SponsoredEventsActivity.class);
                     startActivity(intent);
                     finish();
                 }
