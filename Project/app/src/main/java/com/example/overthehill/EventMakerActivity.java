@@ -96,10 +96,10 @@ public class EventMakerActivity<calendarView> extends AppCompatActivity {
             public void onClick(View view) {
                 String eventType;
                 if(sponsored.isChecked()){
-                    eventType = "events";
+                    eventType = "sponsoredEvents";
                 }
                 else {
-                    eventType = "sponsoredEvents";
+                    eventType = "events";
                 }
 
 

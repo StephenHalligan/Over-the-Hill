@@ -84,13 +84,13 @@ public class SponsoredEventsActivity extends AppCompatActivity {
                             recycler.setAdapter(adapter);
                             Log.d(TAG,events.toString());
                         } else {
-                            Log.w(TAG, "boobies Error getting documents.", task.getException());
+                            Log.w(TAG, "Error getting documents.", task.getException());
                         }
                     }
                 });
         /*
         final EventsAdapter adapter = new EventsAdapter(events);
-        Log.d(TAG,adapter.toString() + "boobies");
+        Log.d(TAG,adapter.toString());
         recycler.setAdapter(adapter);
          */
         recycler.setLayoutManager(new LinearLayoutManager(this));
