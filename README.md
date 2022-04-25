@@ -25,7 +25,7 @@ The trello board for development can be found [here](https://trello.com/b/hfV0iF
 Our users can register, log their favorite passtimes and bio etc, then get searching for events in their area that may interest them. We have an event maker on the app, where the user can choose if they want to sponsor the ad, or have it appear (for free) in the general area.
 
 The app can be seen running in the following [screenshots](https://imgur.com/a/02aM8TG) taken of the prototype (25/04/2022)
-We tried to stick closely to the [wireframes](https://imgur.com/a/B7tc87v) we orignally created when brainstorming.
+We tried to stick closely to the [wireframes](https://imgur.com/a/I7Loqyh) we orignally created when brainstorming.
 
 The code can currently be run in android studio using an emulator, or a physical device if you possess one.
 
