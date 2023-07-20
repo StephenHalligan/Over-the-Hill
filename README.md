@@ -2,7 +2,6 @@
 <h1>Mobile Development Project 2022</h1>
 
 <h3>'Over the Hill'</h3>
-<h4>by Stephen, Adam, Andrew, Mark</h4>
 
 <hr>
 <h2>Project overview</h2>
